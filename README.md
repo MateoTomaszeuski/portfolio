@@ -1,75 +1,82 @@
-# React + TypeScript + Vite
+# Mateo Tomaszeuski's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website showcasing my professional experience, leadership roles, and projects as a Software Engineer.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio highlights my journey as an Argentinian Software Engineer with expertise in:
+- Docker & Kubernetes
+- Cloud Web Services (Azure)
+- .NET MAUI & ASP.NET Core
+- React & TypeScript
+- Full-stack development
 
-## React Compiler
+## Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Responsive Design**: Built with Tailwind CSS using the Slate color scheme
+- **Dark Mode Support**: Automatically adapts to user preferences
+- **Professional Sections**:
+  - Work Experience
+  - Leadership Experience
+  - Projects Portfolio
+- **Modern Tech Stack**: React, TypeScript, Vite, React Router
 
-Note: This will impact Vite dev & build performances.
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js (v18 or higher)
+- pnpm (or npm/yarn)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+
+```bash
+# Install dependencies
+pnpm install
+
+# Run development server
+pnpm run dev
+
+# Build for production
+pnpm run build
+
+# Preview production build
+pnpm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+portfolio/
+├── src/
+│   ├── components/
+│   │   └── Navbar.tsx       # Navigation component
+│   ├── pages/
+│   │   ├── Home.tsx          # Home page
+│   │   └── About.tsx         # About page with experience & projects
+│   ├── App.tsx               # Main app component
+│   ├── main.tsx              # Entry point
+│   └── index.css             # Global styles
+├── public/                   # Static assets
+└── package.json
+```
+
+## Contact
+
+**Mateo Tomaszeuski**  
+Software Engineer | Snow College
+
+- LinkedIn: [linkedin.com/in/mateo-tomaszeuski](https://www.linkedin.com/in/mateo-tomaszeuski/)
+
+## License
+
+This project is open source and available for educational purposes.
+
