@@ -21,7 +21,7 @@ export default function About() {
 
                 {/* Contact Links */}
                 <Section title="Connect With Me">
-                    <div className="flex gap-4">
+                    <div className="flex flex-col sm:flex-row gap-4">
                         <SocialLink 
                             href="https://github.com/MateoTomaszeuski"
                             icon={<GitHubIcon />}
@@ -168,17 +168,6 @@ export default function About() {
                                 "Developed using .NET MAUI, implemented with ASP.NET CORE API and PostgreSQL Database",
                                 "Spearheaded multiple rounds of structured user testing to evaluate the application's usability",
                                 "Worked integrally with a dynamic, four-developer team in an agile environment"
-                            ]}
-                        />
-
-                        <ProjectCard 
-                            title="Air Car"
-                            timeline="Jan 2025 - Mar 2025"
-                            description="AIRCAR is a community-driven peer-to-peer car rental platform designed to address the lack of reliable and affordable transportation in Utah. Targeting underserved communities, tourists, and locals without access to personal vehicles, AIRCAR connects car owners and renters through a secure, user-friendly mobile app."
-                            items={[
-                                "Secure pick-up/drop-off points, live chat for coordination, insurance coverage, and identity verification",
-                                "Innovative \"win-win transport rentals\" allow for discounted rates when vehicles need relocation",
-                                "Built with .NET MAUI and PostgreSQL"
                             ]}
                         />
 
