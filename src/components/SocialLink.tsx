@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { useState } from 'react'
 
 interface SocialLinkProps {
   href: string
@@ -6,6 +7,7 @@ interface SocialLinkProps {
   label: string
   bgColor?: string
   hoverColor?: string
+  copyToClipboard?: string
 }
 
 export default function SocialLink({ 
@@ -13,17 +15,35 @@ export default function SocialLink({
   icon, 
   label,
   bgColor = 'bg-slate-800 dark:bg-slate-700',
-  hoverColor = 'hover:bg-slate-700 dark:hover:bg-slate-600'
+  hoverColor = 'hover:bg-slate-700 dark:hover:bg-slate-600',
+  copyToClipboard
 }: SocialLinkProps) {
+  const [copied, setCopied] = useState(false)
+
+  const handleClick = async (e: React.MouseEvent) => {
+    if (copyToClipboard) {
+      e.preventDefault()
+      try {
+        await navigator.clipboard.writeText(copyToClipboard)
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+      } catch {
+        // Fallback: open mailto if copy fails
+        window.location.href = href
+      }
+    }
+  }
+
   return (
     <a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`inline-flex items-center px-6 py-3 ${bgColor} text-white rounded-lg ${hoverColor} transition-colors shadow-md`}
+      onClick={handleClick}
+      target={copyToClipboard ? undefined : "_blank"}
+      rel={copyToClipboard ? undefined : "noopener noreferrer"}
+      className={`inline-flex items-center px-6 py-3 ${bgColor} text-white rounded-lg ${hoverColor} transition-colors shadow-md relative`}
     >
       {icon}
-      {label}
+      {copied ? 'Copied!' : label}
     </a>
   )
 }
@@ -44,5 +64,11 @@ export const LinkedInIcon = () => (
 export const ExternalLinkIcon = () => (
   <svg className="w-3 h-3 md:w-4 md:h-4 mr-1.5 md:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+  </svg>
+)
+
+export const MailIcon = () => (
+  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
   </svg>
 )

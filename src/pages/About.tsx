@@ -1,6 +1,6 @@
 import Section from '../components/Section'
 import ExperienceCard from '../components/ExperienceCard'
-import SocialLink, { GitHubIcon, LinkedInIcon } from '../components/SocialLink'
+import SocialLink, { GitHubIcon, LinkedInIcon, MailIcon } from '../components/SocialLink'
 import ProjectCard from '../components/ProjectCard'
 
 export default function About() {
@@ -33,6 +33,14 @@ export default function About() {
                             label="LinkedIn"
                             bgColor="bg-blue-600 dark:bg-blue-700"
                             hoverColor="hover:bg-blue-700 dark:hover:bg-blue-600"
+                        />
+                        <SocialLink 
+                            href="mailto:mtomaszeuski@gmail.com"
+                            icon={<MailIcon />}
+                            label="mtomaszeuski@gmail.com"
+                            bgColor="bg-green-600 dark:bg-green-700"
+                            hoverColor="hover:bg-green-700 dark:hover:bg-green-600"
+                            copyToClipboard="mtomaszeuski@gmail.com"
                         />
                     </div>
                 </Section>
