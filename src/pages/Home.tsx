@@ -18,15 +18,8 @@ export default function Home() {
       title: "Consilium - Student Planner App",
       timeline: "Feb 2025 - May 2025",
       description: "A student planning application developed using .NET MAUI with ASP.NET CORE API and PostgreSQL database. Led multiple rounds of structured user testing to evaluate usability. Worked integrally with a dynamic, four-developer team in an agile environment.",
-      deployed: null,
-      github: null,
-    },
-    {
-      title: "Air Car",
-      timeline: "Jan 2025 - Mar 2025",
-      description: "AIRCAR is a community-driven peer-to-peer car rental platform designed to address the lack of reliable and affordable transportation in Utah. Features secure pick-up/drop-off points, live chat, insurance coverage, and identity verification. Built with .NET MAUI and PostgreSQL.",
-      deployed: null,
-      github: null,
+      deployed: "https://consilium.mateo.tomaszeuski.com/",
+      github: "https://github.com/MateoTomaszeuski/consilium-student-planner-app",
     },
     {
       title: "BMR & TDEE Calculator",
