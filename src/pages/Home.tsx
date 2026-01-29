@@ -13,7 +13,7 @@ export default function Home() {
     {
       title: "Spotify Agent - Spotify AI Manager",
       timeline: "Sep 2025 - Dec 2025",
-      description: "An intelligent Spotify management assistant that automates playlist creation, music discovery, and library organization. Users can interact with an AI agent that creates custom playlists based on natural language descriptions, suggests personalized music recommendations, discovers new tracks aligned with their taste, and cleans up duplicate songs across playlists—all while maintaining full visibility and control over every action the agent performs.",
+      description: "An intelligent Spotify management assistant that automates playlist creation, music discovery, and library organization. Users can interact with an AI agent that creates custom playlists based on natural language descriptions, suggests personalized music recommendations, discovers new tracks aligned with their taste, and cleans up duplicate songs across playlists, all while maintaining full visibility and control over every action the agent performs.",
       deployed: "https://spotify.mateo.tomaszeuski.com/",
       github: "https://github.com/MateoTomaszeuski/spotify-manager-ai-agent",
     },
@@ -46,15 +46,15 @@ export default function Home() {
         {/* Projects Section */}
         <Section>
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-6 md:mb-8">My Projects</h2>
-          
+
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-slate-300 dark:bg-slate-700"></div>
-            
+
             {/* Projects */}
             <div className="space-y-8 md:space-y-12">
               {projects.map((project, index) => (
-                <ProjectCard 
+                <ProjectCard
                   key={index}
                   title={project.title}
                   timeline={project.timeline}

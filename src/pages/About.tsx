@@ -22,19 +22,19 @@ export default function About() {
                 {/* Contact Links */}
                 <Section title="Connect With Me">
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <SocialLink 
+                        <SocialLink
                             href="https://github.com/MateoTomaszeuski"
                             icon={<GitHubIcon />}
                             label="GitHub"
                         />
-                        <SocialLink 
+                        <SocialLink
                             href="https://www.linkedin.com/in/mateo-tomaszeuski/"
                             icon={<LinkedInIcon />}
                             label="LinkedIn"
                             bgColor="bg-blue-600 dark:bg-blue-700"
                             hoverColor="hover:bg-blue-700 dark:hover:bg-blue-600"
                         />
-                        <SocialLink 
+                        <SocialLink
                             href="mailto:mtomaszeuski@gmail.com"
                             icon={<MailIcon />}
                             label="mtomaszeuski@gmail.com"
@@ -48,7 +48,7 @@ export default function About() {
                 {/* Work Experience */}
                 <Section title="Work Experience">
                     <div className="space-y-8">
-                        <ExperienceCard 
+                        <ExperienceCard
                             title="Software Engineering Teaching Assistant"
                             organization="Snow College"
                             location="Ephraim, Utah"
@@ -60,7 +60,7 @@ export default function About() {
                             ]}
                         />
 
-                        <ExperienceCard 
+                        <ExperienceCard
                             title="Math Tutor"
                             organization="Snow College"
                             location="Ephraim, Utah"
@@ -72,7 +72,7 @@ export default function About() {
                             ]}
                         />
 
-                        <ExperienceCard 
+                        <ExperienceCard
                             title="Software Engineer Internship"
                             organization="Dynamic Integrations"
                             timeline="Sep 2024 - May 2025"
@@ -88,7 +88,7 @@ export default function About() {
                 {/* Leadership Experience */}
                 <Section title="Leadership Experience">
                     <div className="space-y-8">
-                        <ExperienceCard 
+                        <ExperienceCard
                             title="Resident Director"
                             organization="Snow College"
                             location="Ephraim, Utah"
@@ -100,7 +100,7 @@ export default function About() {
                             ]}
                         />
 
-                        <ExperienceCard 
+                        <ExperienceCard
                             title="Resident Assistant"
                             organization="Snow College"
                             timeline="Aug 2024 - May 2025"
@@ -111,7 +111,7 @@ export default function About() {
                             ]}
                         />
 
-                        <ExperienceCard 
+                        <ExperienceCard
                             title="Student Body Vice President"
                             organization="Snow College"
                             timeline="May 2023 - Dec 2023"
@@ -122,7 +122,7 @@ export default function About() {
                             ]}
                         />
 
-                        <ExperienceCard 
+                        <ExperienceCard
                             title="Student Body Officer"
                             organization="Snow College"
                             timeline="Aug 2022 - May 2023"
@@ -138,7 +138,7 @@ export default function About() {
                 {/* Projects */}
                 <Section title="Projects">
                     <div className="space-y-8">
-                        <ProjectCard 
+                        <ProjectCard
                             title="ITIN - Itinerary & Trip Planner"
                             timeline="Aug 2025 - Present"
                             description=""
@@ -149,10 +149,10 @@ export default function About() {
                             ]}
                         />
 
-                        <ProjectCard 
+                        <ProjectCard
                             title="Spotify Agent - Spotify AI Manager"
                             timeline="Sep 2025 - Dec 2025"
-                            description="An intelligent Spotify management assistant that automates playlist creation, music discovery, and library organization. Users can interact with an AI agent that creates custom playlists based on natural language descriptions, suggests personalized music recommendations, discovers new tracks aligned with their taste, and cleans up duplicate songs across playlists—all while maintaining full visibility and control over every action the agent performs."
+                            description="An intelligent Spotify management assistant that automates playlist creation, music discovery, and library organization. Users can interact with an AI agent that creates custom playlists based on natural language descriptions, suggests personalized music recommendations, discovers new tracks aligned with their taste, and cleans up duplicate songs across playlists, all while maintaining full visibility and control over every action the agent performs."
                             items={[
                                 "Implemented a CI/CD pipeline for autonomous testing, linting checks, and deployment to testing environment and production",
                                 "Implemented Artificial Intelligence as an Agent to manage Spotify accounts based on user input, implemented the Agentic loop",
@@ -160,7 +160,7 @@ export default function About() {
                             ]}
                         />
 
-                        <ProjectCard 
+                        <ProjectCard
                             title="Consilium - Student Planner App"
                             timeline="Feb 2025 - May 2025"
                             description=""
@@ -171,7 +171,7 @@ export default function About() {
                             ]}
                         />
 
-                        <ProjectCard 
+                        <ProjectCard
                             title="BMR & TDEE Calculator"
                             timeline="Jan 2024"
                             description=""
