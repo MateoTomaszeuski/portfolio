@@ -135,6 +135,31 @@ export default function About() {
                     </div>
                 </Section>
 
+                {/* Education */}
+                <Section title="Education">
+                    <div className="space-y-8">
+                        <ExperienceCard
+                            title="Bachelor's Degree, Computer Software Engineering"
+                            organization="Snow College"
+                            timeline="Aug 2024 - Apr 2026"
+                            items={[
+                                "Activities and societies: Student Body Vice President, Cheerleader, Resident Director",
+                                "Problem Solving, SQL and +16 skills"
+                            ]}
+                        />
+
+                        <ExperienceCard
+                            title="Associate of Science - AS, Computer Science"
+                            organization="Snow College"
+                            timeline="Jan 2022 - May 2024"
+                            items={[
+                                "Activities and societies: Student Body Officer, Student Body Vice President",
+                                "Problem Solving, C# and +7 skills"
+                            ]}
+                        />
+                    </div>
+                </Section>
+
                 {/* Projects */}
                 <Section title="Projects">
                     <div className="space-y-8">
