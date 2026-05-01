@@ -139,9 +139,22 @@ export default function About() {
                 <Section title="Projects">
                     <div className="space-y-8">
                         <ProjectCard
-                            title="ITIN - Itinerary & Trip Planner"
-                            timeline="Aug 2025 - Present"
+                            title="Top-Down 2D Battle Royale"
+                            timeline="Jan 2026 - April 2026"
                             description=""
+                            github="https://github.com/MateoTomaszeuski/2d-battle-royale-distributed-app"
+                            items={[
+                                "Built a distributed multiplayer game with an Elixir backend, React frontend, and PostgreSQL database",
+                                "Implemented CI/CD with Docker and Kubernetes; supports multiple simultaneous lobbies and real-time player movement",
+                                "Designed a fault-tolerant failover system using PubSub for pod-level recovery and database-level recovery if all backend nodes go down"
+                            ]}
+                        />
+
+                        <ProjectCard
+                            title="ITIN - Itinerary & Trip Planner"
+                            timeline="Aug 2025 - April 2026"
+                            description=""
+                            deployed="https://itin.tomaszeuski.com"
                             items={[
                                 "Worked in a four-developer team, implementing an AGILE / SCRUM environment, gaining experience as a SCRUM MASTER",
                                 "Hands-on experience as a full-stack developer, Back-end in C#, Front-End in React, and Database with PostgreSQL",

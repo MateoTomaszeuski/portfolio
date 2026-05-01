@@ -4,10 +4,17 @@ import ProjectCard from '../components/ProjectCard'
 export default function Home() {
   const projects = [
     {
-      title: "ITIN - Itinerary & Trip Planner",
-      timeline: "Aug 2025 - Present",
-      description: "A comprehensive trip planning application built in a four-developer AGILE/SCRUM team. Full-stack development with C# backend, React frontend, and PostgreSQL database. Deployed using Docker locally, Kubernetes for testing, and Azure for production.",
+      title: "Top-Down 2D Battle Royale",
+      timeline: "Jan 2026 - April 2026",
+      description: "A distributed top-down 2D battle royale game where players move on a grid, choose characters with unique powers, and compete for eliminations. Built with an Elixir backend, React frontend, and PostgreSQL database. Features CI/CD with Docker and Kubernetes, multiple simultaneous lobbies, a leaderboard, and a resilient failover system using PubSub — if a backend pod fails in Kubernetes, traffic shifts to healthy pods, and if all backends go down, state is recovered from the database.",
       deployed: null,
+      github: "https://github.com/MateoTomaszeuski/2d-battle-royale-distributed-app",
+    },
+    {
+      title: "ITIN - Itinerary & Trip Planner",
+      timeline: "Aug 2025 - April 2026",
+      description: "A comprehensive trip planning application built in a four-developer AGILE/SCRUM team. Full-stack development with C# backend, React frontend, and PostgreSQL database. Deployed using Docker locally, Kubernetes for testing, and Azure for production.",
+      deployed: "https://itin.tomaszeuski.com",
       github: null,
     },
     {
