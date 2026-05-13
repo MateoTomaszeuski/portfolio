@@ -12,18 +12,6 @@ export default function Navbar() {
               <span className="sm:hidden">MT</span>
             </span>
           </Link>
-          <ul className="flex space-x-4 md:space-x-6">
-            <li>
-              <Link to="/" className="text-sm md:text-base text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="text-sm md:text-base text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium">
-                About
-              </Link>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>

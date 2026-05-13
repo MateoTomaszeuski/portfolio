@@ -73,21 +73,18 @@ export default function ProjectCard({
     )
   }
 
-  // Timeline variant
+  // Timeline variant - timeline on left, all content on right
   return (
-    <div className={`relative flex flex-col md:flex-row gap-8 ${position === 'left' ? 'md:flex-row-reverse' : ''}`}>
-      {/* Timeline dot */}
-      <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 md:w-4 md:h-4 bg-blue-500 dark:bg-blue-400 rounded-full border-2 md:border-4 border-slate-100 dark:border-slate-900 z-10"></div>
+    <div className="relative">
+      {/* Timeline dot - centered over the line */}
+      <div className="absolute left-0 transform -translate-x-1/2 w-3 h-3 md:w-4 md:h-4 bg-blue-500 dark:bg-blue-400 rounded-full border-2 md:border-4 border-slate-100 dark:border-slate-900 z-10"></div>
       
-      {/* Content */}
-      <div className={`md:w-1/2 ${position === 'left' ? 'md:pr-12' : 'md:pl-12'}`}>
-        <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-4 md:p-6 ml-6 md:ml-0">
+      {/* Content - always on the right with left padding */}
+      <div className="ml-6 md:ml-8">
+        <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-4 md:p-6">
           {content}
         </div>
       </div>
-      
-      {/* Empty space for alternating layout */}
-      <div className="hidden md:block md:w-1/2"></div>
     </div>
   )
 }
