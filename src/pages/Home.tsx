@@ -1,7 +1,7 @@
 import Section from "../components/Section";
 import ProjectCard from "../components/ProjectCard";
 import ExperienceCard from "../components/ExperienceCard";
-import { MailIcon, LinkedInIcon, GitHubIcon } from "../components/SocialLink";
+import { MailIcon, LinkedInIcon, GitHubIcon, DownloadIcon } from "../components/SocialLink";
 
 export default function Home() {
   const projects = [
@@ -124,6 +124,14 @@ export default function Home() {
                 >
                   <GitHubIcon />
                   GitHub
+                </a>
+                <a
+                  href="/Mateo%20Tomaszeuski%20-%20Resume%20-%20May%202026.pdf"
+                  download
+                  className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
+                >
+                  <DownloadIcon />
+                  Resume
                 </a>
               </div>
             </div>
