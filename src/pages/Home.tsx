@@ -352,7 +352,6 @@ export default function Home() {
                   github={project.github}
                   items={project.items}
                   variant="timeline"
-                  position="left"
                 />
               ))}
             </div>
