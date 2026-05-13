@@ -31,7 +31,7 @@ export default function ExperienceCard({
       {description && (
         <p className="text-slate-700 dark:text-slate-300 mb-2">{description}</p>
       )}
-      <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-1">
+      <ul className="list-disc list-inside text-sm text-slate-700 dark:text-slate-300 space-y-1">
         {items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
