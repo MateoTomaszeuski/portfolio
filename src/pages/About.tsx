@@ -49,10 +49,23 @@ export default function About() {
                 <Section title="Work Experience">
                     <div className="space-y-8">
                         <ExperienceCard
+                            title="Business & Technology Development"
+                            organization="EIS Forensic"
+                            location="Centerville, Utah"
+                            timeline="May 2026 - Present"
+                            items={[
+                                "Lead strategic communications and client relationships, bridging technical expertise with client-facing initiatives to maximize company visibility and impact",
+                                "Design and continuously improve company website using React and ASP.NET Core, implement cloud services architecture, and modernize internal technologies",
+                                "Develop internal tools to improve company efficiency and streamline communication with clients, enhancing operational workflows and client engagement",
+                                "Integrate AI solutions and develop CI/CD pipelines for software optimization, while expanding the firm's professional presence on LinkedIn and digital platforms"
+                            ]}
+                        />
+
+                        <ExperienceCard
                             title="Software Engineering Teaching Assistant"
                             organization="Snow College"
                             location="Ephraim, Utah"
-                            timeline="Aug 2025 - Present"
+                            timeline="Aug 2025 - May 2026"
                             items={[
                                 "Teach and tutor students in the .NET Framework and ASP.NET Core, reinforcing core software engineering concepts",
                                 "Assist with debugging, code reviews, and understanding application architecture and best practices",
@@ -64,7 +77,7 @@ export default function About() {
                             title="Math Tutor"
                             organization="Snow College"
                             location="Ephraim, Utah"
-                            timeline="Aug 2025 - Present"
+                            timeline="Aug 2025 - May 2026"
                             items={[
                                 "Provide one-on-one and small-group tutoring in Mathematics and Statistics, supporting students across multiple course levels",
                                 "Explain complex concepts clearly by adapting explanations to different learning styles",
