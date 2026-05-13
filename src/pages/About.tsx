@@ -8,7 +8,7 @@ export default function About() {
         <div className="min-h-screen bg-slate-100 dark:bg-slate-900">
             {/* Hero Section */}
             <div className="bg-gradient-to-br from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black py-12 md:py-20">
-                <div className="container mx-auto px-4 max-w-6xl">
+                <div className="container mx-auto px-4 max-w-5xl">
                     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                         {/* Profile Photo */}
                         <div className="flex-shrink-0">
@@ -52,7 +52,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 py-8 max-w-6xl">
+            <div className="container mx-auto px-4 py-8 max-w-5xl">
                 {/* About Section */}
                 <Section title="About">
                     <div className="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -152,10 +152,10 @@ export default function About() {
                             location="Centerville, Utah"
                             timeline="May 2026 - Present"
                             items={[
-                                "Lead strategic communications and client relationships, bridging technical expertise with client-facing initiatives to maximize company visibility and impact",
-                                "Design and continuously improve company website using React and ASP.NET Core, implement cloud services architecture, and modernize internal technologies",
-                                "Develop internal tools to improve company efficiency and streamline communication with clients, enhancing operational workflows and client engagement",
-                                "Integrate AI solutions and develop CI/CD pipelines for software optimization, while expanding the firm's professional presence on LinkedIn and digital platforms"
+                                "Lead strategic communications and client relationships to maximize company visibility",
+                                "Design company website with React and ASP.NET Core, implement cloud architecture",
+                                "Develop internal tools to improve efficiency and streamline client communication",
+                                "Integrate AI solutions, build CI/CD pipelines, and expand LinkedIn presence"
                             ]}
                         />
 
@@ -165,9 +165,9 @@ export default function About() {
                             location="Ephraim, Utah"
                             timeline="Aug 2025 - May 2026"
                             items={[
-                                "Teach and tutor students in the .NET Framework and ASP.NET Core, reinforcing core software engineering concepts",
-                                "Assist with debugging, code reviews, and understanding application architecture and best practices",
-                                "Support instructors during labs and coursework by answering technical questions and guiding students through assignments"
+                                "Teach .NET Framework and ASP.NET Core, reinforcing software engineering concepts",
+                                "Assist with debugging, code reviews, and application architecture best practices",
+                                "Support instructors during labs by answering technical questions"
                             ]}
                         />
 
@@ -177,9 +177,9 @@ export default function About() {
                             location="Ephraim, Utah"
                             timeline="Aug 2025 - May 2026"
                             items={[
-                                "Provide one-on-one and small-group tutoring in Mathematics and Statistics, supporting students across multiple course levels",
-                                "Explain complex concepts clearly by adapting explanations to different learning styles",
-                                "Assist students with homework, exam preparation, and problem-solving strategies to improve academic performance"
+                                "Provide tutoring in Mathematics and Statistics across multiple course levels",
+                                "Explain complex concepts by adapting to different learning styles",
+                                "Assist with homework, exam preparation, and problem-solving strategies"
                             ]}
                         />
 
@@ -188,9 +188,9 @@ export default function About() {
                             organization="Dynamic Integrations"
                             timeline="Sep 2024 - May 2025"
                             items={[
-                                "Gained hands-on experience with Docker for in-development testing with databases",
-                                "Worked with clients to refine software requirements and presented projects to potential customers at a convention",
-                                "Developed skills in explaining technical decisions and project contributions clearly to diverse audiences"
+                                "Gained hands-on experience with Docker for database testing",
+                                "Worked with clients to refine requirements and presented at conventions",
+                                "Developed skills explaining technical decisions to diverse audiences"
                             ]}
                         />
                     </div>
