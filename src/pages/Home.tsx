@@ -299,7 +299,7 @@ export default function Home() {
         <Section title="Work Experience">
           <div className="space-y-8">
             <ExperienceCard
-              title="Business & Technology Development Engineer"
+              title="Business Development & Technology Engineer"
               organization="EIS Forensic"
               location="Centerville, Utah"
               timeline="May 2026 - Present"
