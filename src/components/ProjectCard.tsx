@@ -8,7 +8,6 @@ interface ProjectCardProps {
   github?: string | null
   items?: string[]
   variant?: 'timeline' | 'card'
-  position?: 'left' | 'right'
 }
 
 export default function ProjectCard({ 
@@ -18,8 +17,7 @@ export default function ProjectCard({
   deployed,
   github,
   items,
-  variant = 'card',
-  position = 'left'
+  variant = 'card'
 }: ProjectCardProps) {
   const content = (
     <>
