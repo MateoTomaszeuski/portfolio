@@ -347,7 +347,7 @@ export default function Home() {
               title="Resident Director"
               organization="Snow College"
               location="Ephraim, Utah"
-              timeline="Aug 2025 - Present"
+              timeline="Aug 2025 - May 2026"
               items={[
                 "Campus Security Authority, reporting any broken policy, law, or concern that occurs on campus",
                 "Mediate when trouble between residents occurs, report to the Dean of Students or Dispatch",
@@ -358,6 +358,7 @@ export default function Home() {
             <ExperienceCard
               title="Resident Assistant"
               organization="Snow College"
+              location="Ephraim, Utah"
               timeline="Aug 2024 - May 2025"
               items={[
                 "Campus Security Authority, reporting any broken policy, law, or concern that occurs on campus",
@@ -369,6 +370,7 @@ export default function Home() {
             <ExperienceCard
               title="Student Body Vice President"
               organization="Snow College"
+              location="Ephraim, Utah"
               timeline="May 2023 - Dec 2023"
               items={[
                 "Committee Lead for the marketing team, organizing and running meetings throughout an agenda",
@@ -380,6 +382,7 @@ export default function Home() {
             <ExperienceCard
               title="Student Body Officer"
               organization="Snow College"
+              location="Ephraim, Utah"
               timeline="Aug 2022 - May 2023"
               items={[
                 "Improved engagement, impressions, and reach of the Instagram account by 300%",
