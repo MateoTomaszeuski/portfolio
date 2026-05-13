@@ -1,49 +1,147 @@
 import Section from '../components/Section'
 import ExperienceCard from '../components/ExperienceCard'
-import SocialLink, { GitHubIcon, LinkedInIcon, MailIcon } from '../components/SocialLink'
+import { LinkedInIcon, MailIcon } from '../components/SocialLink'
 import ProjectCard from '../components/ProjectCard'
 
 export default function About() {
     return (
         <div className="min-h-screen bg-slate-100 dark:bg-slate-900">
+            {/* Hero Section */}
+            <div className="bg-gradient-to-br from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black py-12 md:py-20">
+                <div className="container mx-auto px-4 max-w-6xl">
+                    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                        {/* Profile Photo */}
+                        <div className="flex-shrink-0">
+                            <img 
+                                src="/professional.jpg" 
+                                alt="Mateo Tomaszeuski" 
+                                className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover border-4 border-white dark:border-slate-700 shadow-xl"
+                            />
+                        </div>
+                        
+                        {/* Info */}
+                        <div className="text-center md:text-left">
+                            <h1 className="text-3xl md:text-5xl font-bold text-white mb-2">
+                                Mateo Tomaszeuski
+                            </h1>
+                            <p className="text-lg md:text-xl text-slate-300 mb-6">
+                                Business & Technology Development
+                            </p>
+                            
+                            {/* Contact Links */}
+                            <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm md:text-base">
+                                <a 
+                                    href="mailto:mtomaszeuski@gmail.com" 
+                                    className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
+                                >
+                                    <MailIcon />
+                                    mtomaszeuski@gmail.com
+                                </a>
+                                <a 
+                                    href="https://www.linkedin.com/in/mateo-tomaszeuski/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
+                                >
+                                    <LinkedInIcon />
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="container mx-auto px-4 py-8 max-w-6xl">
-                <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">
-                    About Me
-                </h1>
-
-                {/* Summary */}
-                <Section>
-                    <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-                        Argentinian Software Engineer with hands-on experience in Docker, Kubernetes, Cloud Web Services, .NET MAUI, React, and ASP.NET Core.
-                        Proven record of collaborating effectively in agile teams, developing solutions, and driving user-focused improvements, with Leadership Experience.
-                    </p>
-                </Section>
-
-                {/* Contact Links */}
-                <Section title="Connect With Me">
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <SocialLink
-                            href="https://github.com/MateoTomaszeuski"
-                            icon={<GitHubIcon />}
-                            label="GitHub"
-                        />
-                        <SocialLink
-                            href="https://www.linkedin.com/in/mateo-tomaszeuski/"
-                            icon={<LinkedInIcon />}
-                            label="LinkedIn"
-                            bgColor="bg-blue-600 dark:bg-blue-700"
-                            hoverColor="hover:bg-blue-700 dark:hover:bg-blue-600"
-                        />
-                        <SocialLink
-                            href="mailto:mtomaszeuski@gmail.com"
-                            icon={<MailIcon />}
-                            label="mtomaszeuski@gmail.com"
-                            bgColor="bg-green-600 dark:bg-green-700"
-                            hoverColor="hover:bg-green-700 dark:hover:bg-green-600"
-                            copyToClipboard="mtomaszeuski@gmail.com"
-                        />
+                {/* About Section */}
+                <Section title="About">
+                    <div className="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed">
+                        <p>
+                            Mateo is a software engineer who focuses on strategic communications, client relationships, and the integration of technology and AI to maximize EIS's visibility and client impact. He brings a strong technical foundation in full-stack web development, data analysis, and cloud services, which he applies to modernizing and expanding the company's digital presence.
+                        </p>
+                        <p>
+                            His background spans software engineering with expertise in React, ASP.NET Core, Docker, and cloud services, as well as data science and CI/CD pipeline implementation. Mateo combines technical depth with strong organizational and communication skills, making him effective at bridging the gap between engineering expertise and client-facing initiatives.
+                        </p>
+                        <p>
+                            Mateo leads efforts to strengthen EIS's presence online, including the design and continuous improvement of the company website, upgrades to internal technologies, and growing the firm's reach on professional platforms such as LinkedIn. His work ensures the company's expertise and reputation are clearly communicated to clients, partners, and the broader professional community.
+                        </p>
                     </div>
                 </Section>
+
+                {/* Areas of Focus */}
+                <Section title="Areas of Focus">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-700 dark:text-slate-300">
+                        <li className="flex items-start gap-2">
+                            <span className="text-slate-500 dark:text-slate-400 mt-1">•</span>
+                            <span>Front-End Development</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-slate-500 dark:text-slate-400 mt-1">•</span>
+                            <span>Back-End Development</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-slate-500 dark:text-slate-400 mt-1">•</span>
+                            <span>Cloud Services</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-slate-500 dark:text-slate-400 mt-1">•</span>
+                            <span>Software Architecture</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-slate-500 dark:text-slate-400 mt-1">•</span>
+                            <span>Software Maintenance & Optimization</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-slate-500 dark:text-slate-400 mt-1">•</span>
+                            <span>AI Integration</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-slate-500 dark:text-slate-400 mt-1">•</span>
+                            <span>Data Analysis</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-slate-500 dark:text-slate-400 mt-1">•</span>
+                            <span>CI/CD Pipelines</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-slate-500 dark:text-slate-400 mt-1">•</span>
+                            <span>Testing & Quality Assurance</span>
+                        </li>
+                    </ul>
+                </Section>
+
+                {/* Education and Languages Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {/* Education */}
+                    <Section title="Education">
+                        <div className="space-y-4">
+                            <div className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm">
+                                <h3 className="font-semibold text-slate-900 dark:text-white">
+                                    Snow College, BS Software Engineering - Web Development & Data Science
+                                </h3>
+                                <p className="text-sm text-slate-600 dark:text-slate-400">(2026)</p>
+                            </div>
+                        </div>
+                    </Section>
+
+                    {/* Languages */}
+                    <Section title="Languages">
+                        <div className="space-y-3">
+                            <div className="flex items-center gap-3">
+                                <span className="w-20 text-sm font-medium text-slate-700 dark:text-slate-300">English</span>
+                                <div className="flex-1 bg-slate-200 dark:bg-slate-700 rounded-full h-2">
+                                    <div className="bg-slate-600 dark:bg-slate-400 h-2 rounded-full" style={{width: '100%'}}></div>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <span className="w-20 text-sm font-medium text-slate-700 dark:text-slate-300">Spanish</span>
+                                <div className="flex-1 bg-slate-200 dark:bg-slate-700 rounded-full h-2">
+                                    <div className="bg-slate-600 dark:bg-slate-400 h-2 rounded-full" style={{width: '100%'}}></div>
+                                </div>
+                            </div>
+                        </div>
+                    </Section>
+                </div>
 
                 {/* Work Experience */}
                 <Section title="Work Experience">
