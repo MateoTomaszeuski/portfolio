@@ -1,7 +1,6 @@
 {
   "routes": [
     { "route": "/about", "redirect": "/", "statusCode": 301 },
-    { "route": "/about/", "redirect": "/", "statusCode": 301 },
     { "route": "/index.html", "redirect": "/", "statusCode": 301 }
   ],
   "responseOverrides": {
