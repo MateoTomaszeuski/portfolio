@@ -1,19 +1,19 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
 export default function Navbar() {
-  return (
-    <nav className="bg-white dark:bg-slate-800 shadow-lg">
-      <div className="container mx-auto px-4 py-3 md:py-4">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2 md:space-x-3">
-            <img src="/logo.svg" alt="Logo" className="h-8 w-8 md:h-12 md:w-12" />
-            <span className="text-base md:text-xl font-bold text-slate-900 dark:text-white">
-              <span className="hidden sm:inline">Mateo Tomaszeuski</span>
-              <span className="sm:hidden">MT</span>
-            </span>
-          </Link>
-        </div>
+  const [open, setOpen] = useState(false)
+  return <header className="site-header">
+    <a className="skip-link" href="#main">Skip to content</a>
+    <nav className="shell navigation" aria-label="Main navigation">
+      <Link className="wordmark" to="/" onClick={() => setOpen(false)} aria-label="Mateo Tomaszeuski home">mt<span>.</span></Link>
+      <span className="nav-caption">SOFTWARE ENGINEER</span>
+      <button className="menu-toggle" aria-expanded={open} aria-controls="navigation-links" onClick={() => setOpen(!open)}>{open ? 'Close' : 'Menu'} <span aria-hidden="true">{open ? '−' : '+'}</span></button>
+      <div className={`nav-links ${open ? 'is-open' : ''}`} id="navigation-links">
+        <a href="/#work" onClick={() => setOpen(false)}>Work</a>
+        <a href="/#experience" onClick={() => setOpen(false)}>Experience</a>
+        <a href="/#about" onClick={() => setOpen(false)}>About</a>
+        <a className="nav-contact" href="/#contact" onClick={() => setOpen(false)}>Let’s connect <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
-  )
+  </header>
 }

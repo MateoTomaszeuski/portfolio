@@ -1,81 +1,43 @@
-# Mateo Tomaszeuski's Portfolio
+# Mateo Tomaszeuski — Portfolio
 
-A personal portfolio website showcasing my professional experience, leadership roles, and projects as a Software Engineer.
+A React + TypeScript portfolio focused on full-stack engineering, banking applications, applied AI, and production delivery.
 
-## About
+## Development
 
-This portfolio highlights my journey as an Argentinian Software Engineer with expertise in:
-- Docker & Kubernetes
-- Cloud Web Services (Azure)
-- .NET MAUI & ASP.NET Core
-- React & TypeScript
-- Full-stack development
+The existing CI uses pnpm 9. Both original lockfiles are retained; this redesign introduces no new package dependencies.
 
-## Features
-
-- **Responsive Design**: Built with Tailwind CSS using the Slate color scheme
-- **Dark Mode Support**: Automatically adapts to user preferences
-- **Professional Sections**:
-  - Work Experience
-  - Leadership Experience
-  - Projects Portfolio
-- **Modern Tech Stack**: React, TypeScript, Vite, React Router
-
-## Tech Stack
-
-- **Framework**: React 18 with TypeScript
-- **Build Tool**: Vite
-- **Routing**: React Router DOM
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- pnpm (or npm/yarn)
-
-### Installation
-
-```bash
-# Install dependencies
-pnpm install
-
-# Run development server
-pnpm run dev
-
-# Build for production
-pnpm run build
-
-# Preview production build
-pnpm run preview
+```sh
+pnpm install --frozen-lockfile
+pnpm dev
+pnpm lint
+pnpm build
 ```
 
-## Project Structure
+## Design and content
 
-```
-portfolio/
-├── src/
-│   ├── components/
-│   │   └── Navbar.tsx       # Navigation component
-│   ├── pages/
-│   │   ├── Home.tsx          # Home page
-│   │   └── About.tsx         # About page with experience & projects
-│   ├── App.tsx               # Main app component
-│   ├── main.tsx              # Entry point
-│   └── index.css             # Global styles
-├── public/                   # Static assets
-└── package.json
-```
+- Graphite surfaces, electric green accents, and locally hosted Manrope / Space Grotesk variable fonts.
+- Responsive navigation, project architecture diagrams, expandable project and career details, and résumé downloads.
+- Scroll reveals, hover transitions, and progressive reading position, with reduced-motion support.
+- Current role: Programmer/Analyst, DHI Computing Service, Inc., August 2026–present.
+- Career and project content comes from the September 2026 résumé and the original portfolio. Diagrams explain the documented architecture; they are not screenshots of internal software.
 
-## Contact
+## Structure
 
-**Mateo Tomaszeuski**  
-Software Engineer | Snow College
+- `src/pages/Home.tsx`: introduction and section composition.
+- `src/components/PortfolioSections.tsx`: projects, experience, about, and contact.
+- `src/components/Navbar.tsx`: responsive primary navigation.
+- `src/components/Reveal.tsx`: progressively enhanced, reduced-motion-aware scroll animation.
+- `src/index.css`: design tokens, responsive layouts, and motion.
+- `public/resume.pdf`: current downloadable résumé.
+- `.openai/hosting.json`: separate private Sites deployment configuration.
 
-- LinkedIn: [linkedin.com/in/mateo-tomaszeuski](https://www.linkedin.com/in/mateo-tomaszeuski/)
+The original Azure workflow and custom-domain configuration are retained. Publishing to the GitHub main branch still follows the existing Azure deployment workflow.
 
-## License
+## Asset provenance
 
-This project is open source and available for educational purposes.
+- `professional.jpg` and `me.jpg`: photographs supplied by the original portfolio repository.
+- `resume.pdf`: the current résumé supplied on the owner's computer.
+- Manrope and Space Grotesk: Google Fonts, SIL Open Font License. License files are included in `public/fonts/`.
+- Existing social preview photo and metadata image URL are preserved.
+
+Contact: [LinkedIn](https://www.linkedin.com/in/mateo-tomaszeuski/) · [GitHub](https://github.com/MateoTomaszeuski)
