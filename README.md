@@ -41,3 +41,13 @@ The original Azure workflow and custom-domain configuration are retained. Publis
 - Existing social preview photo and metadata image URL are preserved.
 
 Contact: [LinkedIn](https://www.linkedin.com/in/mateo-tomaszeuski/) · [GitHub](https://github.com/MateoTomaszeuski)
+
+## Search indexing
+
+The production build prerenders the same React components into the HTML, then hydrates them in the browser. Search crawlers and visitors can read the portfolio before JavaScript loads. The canonical URL is https://mateo.tomaszeuski.com/.
+
+- `public/sitemap.xml` lists the canonical page and portrait; update its `lastmod` when content changes significantly.
+- `public/robots.txt` advertises the sitemap.
+- `index.html` contains canonical metadata, social metadata, and ProfilePage / Person JSON-LD.
+- Azure redirects legacy `/about` and `/index.html` URLs to the canonical root. Unknown paths return a real 404.
+- `public/staticwebapp.config.json` is copied into the deployment output; keep it aligned with the root config.

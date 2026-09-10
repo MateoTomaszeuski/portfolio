@@ -5,7 +5,7 @@ export default function Home() {
     <section className="shell hero" aria-labelledby="hero-title">
       <div className="hero-copy">
         <p className="eyebrow"><span className="status-dot" /> MATEO TOMASZEUSKI · BASED IN UTAH</p>
-        <h1 id="hero-title">Thoughtful code.<br /><span>Real-world</span><br />impact.</h1>
+        <h1 id="hero-title"><span className="sr-only">Mateo Tomaszeuski — Software Engineer. </span>Thoughtful code.<br /><span>Real-world</span><br />impact.</h1>
         <p className="hero-description">I build software that connects people, processes, and possibility. From banking platforms to AI agents—full-stack engineering with purpose.</p>
         <div className="hero-actions"><a className="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a><a className="text-link" href="/resume.pdf" download="Mateo Tomaszeuski - Resume.pdf">Download résumé <span aria-hidden="true">↓</span></a></div>
         <div className="hero-footnote"><span className="tiny-cross" aria-hidden="true">+</span><span>C# / .NET &nbsp;·&nbsp; Angular & React &nbsp;·&nbsp; Applied AI</span></div>
